@@ -104,6 +104,7 @@ public class WebToText
                 line = line.replaceAll("(?s)</i>","");
                 line = line.replaceAll("(?s)<hr.*?>","");
                 line = line.replaceAll("(?s)<table.*?>","");
+                line = line.replaceAll("(?s)</table>","");
                 line = line.replaceAll("(?s)<caption.*?</caption>","");
                 line = line.replaceAll("(?s)<td.*?>","");
                 line = line.replaceAll("(?s)</td>","");
@@ -118,6 +119,9 @@ public class WebToText
                 line = line.replaceAll("(?s)<ol.*?>","");
                 line = line.replaceAll("(?s)</ol>","");
                 line = line.replaceAll("(?s)</cite>","");
+                line = line.replaceAll("(?s)<small>","");
+                line = line.replaceAll("(?s)</small>","");
+                
 
                 if(line.contains("<footer")) //Once the footer begins, there is no need to continue reading
                 {
@@ -135,8 +139,6 @@ public class WebToText
                         line = ""; //Except the closing head line.
                     }
                 }
-                line = line.replaceAll("    "," ");
-                line = line.replaceAll("  "," ");
             }
             else
             {
