@@ -107,7 +107,7 @@ public class BabyNameRanker
             {
                 if (userName.equals(boyNames[l][0]))
                 {
-                    System.out.println(boyNames[l][0] + " is ranked #" + l+1 + " as " + boyNames[l][1] + " boys were named this in the decade " + decade);
+                    System.out.println(boyNames[l][0] + " is ranked #" + (l+1) + " as " + boyNames[l][1] + " boys were named this in the decade " + decade);
                     foundName = true;
                     break;
                 }
@@ -127,7 +127,7 @@ public class BabyNameRanker
             {
                 if (userName.equals(girlNames[l][0]))
                 {
-                    System.out.println(girlNames[l][0] + " is ranked #" + l+1 + " as " + girlNames[l][1] + " girls were named this in the decade " + decade);
+                    System.out.println(girlNames[l][0] + " is ranked #" + (l+1) + " as " + girlNames[l][1] + " girls were named this in the decade " + decade);
                     foundName = true;
                     break;
                 }
